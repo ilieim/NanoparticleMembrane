@@ -1,0 +1,13 @@
+pair_coeff  1 1 table tabulated_potential.dat HEAD_HEAD
+pair_coeff  1 2 table tabulated_potential.dat HEAD_TAIL
+# (Note: The "HEAD_TAIL" table is the same as the "HEAD_HEAD" table.)
+pair_coeff  2 2 table tabulated_potential.dat TAIL_TAIL_Wc_1.6
+
+pair_coeff 3 3 lj/cut 1 2.5 # MP - MP
+pair_coeff 1 3 table muLJ_sig1.725_arep2_aattr3_alpha5_rc4.3125_rmin0.5sig.table muLJ_sig1.725_arep2_aattr3_alpha5_rc4.3125_rmin0.5sig #MP-H
+pair_coeff 2 3 table muLJ_sig1.75_arep2_aattr3_alpha5_rc4.375_rmin0.5sig.table muLJ_sig1.75_arep2_aattr3_alpha5_rc4.375_rmin0.5sig #MP-T
+
+bond_coeff  1    fene      30.0 1.5 1.0 1.0
+bond_coeff  2    fene      30.0 1.8 1.0 1.0
+
+angle_coeff 1  harmonic  10.0 180

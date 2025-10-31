@@ -1,0 +1,11 @@
+units           lj
+atom_style      full
+
+bond_style      hybrid fene
+angle_style     hybrid harmonic
+pair_style      hybrid table linear 600 lj/cut 2.5
+pair_modify     shift yes
+special_bonds   lj 0.0 1.0 1.0
+
+neigh_modify    every 1 delay 1
+neighbor        0.3 bin
