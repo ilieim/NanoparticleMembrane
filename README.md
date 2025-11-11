@@ -47,7 +47,7 @@ Simulations outputs will be a full trajectory and bond description which can be 
 
 To visualize the simulation in **Ovito**, follow these steps:
 
-1. Import the `dump.lammpstrj` file to visualize particle motion.
+1. Import the trajectory file to visualize particle motion.
 2. Add the **"Load Trajectory"** modification and load `bonds.txt` for bond information.
 3. Apply the bond settings using the provided `Ovito_Bond_Presets.png`.
 
